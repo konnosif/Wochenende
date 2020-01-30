@@ -9,6 +9,7 @@ Features include (see programs listed below at the bottom of this page)
 - trimming (Trimmomatic, fastp)
 - alignment (bwa mem, minimap2)
 - SAM-> BAM conversion (samtools, sambamba)
+- BAM to .png figures
 - Post-alignment duplicate removal (Picard)
 - Realignment (Abra2)
 - MD tag marking (Samtools)
@@ -93,6 +94,10 @@ OR
 4. Edit the configuration section of `run_Wochenende.py` to set the paths to the tools and reference sequences.
 5. Activate the conda environment before running the pipeline.
 `source activate wochenende`
+6. Make sure that you are using higher or equal versions to: matplotlib==3.1.2 , numpy==1.17.4 , pandas==0.25.3
+   Simple way to check this on command line: " pip freeze "
+
+
 
 ## List of Tools used or optional in the pipeline
 
@@ -156,6 +161,15 @@ BAM Indices
 - MB_aero_S2_R1.trm.s.bam.bai       # Index
 - MB_aero_S2_R1.trm.s.mq30.01mm.dup.bam.bai       # Index
 - MB_aero_S2_R1.trm.s.mq30.01mm.dup.calmd.bam.bai # Index
+
+Directories
+- /png_files_of_tsv/MB_aero_S2_R1.trm.s.mq30.01mm.dup.bam.txt.filt.sort.csv/ 
+- /png_files_of_tsv/MB_aero_S2_R1.trm.s.mq30.01mm.dup.bam.txt.filt.sort.csv/SCORED
+
+Figures
+- /png_files_of_tsv/MB_aero_S2_R1.trm.s.mq30.01mm.dup.bam.txt.filt.sort.csv/..
+- /png_files_of_tsv/MB_aero_S2_R1.trm.s.mq30.01mm.dup.bam.txt.filt.sort.csv/SCORED/..
+
 ```
 
 
